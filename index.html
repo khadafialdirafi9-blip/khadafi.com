@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Khadafi · Sekolah Tamsis</title>
+  <meta name="description" content="Portofolio pribadi Khadafi, siswa sekolah Tamsis: profil, galeri kegiatan, dan kontak.">
+
+  <!-- Font dari Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Kumpulan ikon (dipanggil dengan <use href="#i-nama">) ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-panah" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-atas" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-bagikan" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></symbol>
+    <symbol id="i-kamera" viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h2.5l1.5-2h6l1.5 2H19a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+    <symbol id="i-gambar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></symbol>
+    <symbol id="i-sekolah" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.6A8.5 8.5 0 1 1 21 11.5z"/></symbol>
+    <symbol id="i-salin" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></symbol>
+    <symbol id="i-tutup" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-kiri" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+    <symbol id="i-kanan" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+    <symbol id="i-kalender" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-lokasi" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-bintang" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></symbol>
+    <symbol id="i-orang" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/></symbol>
+    <symbol id="i-buku" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></symbol>
+    <symbol id="i-kirim" viewBox="0 0 24 24"><path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/></symbol>
+    <symbol id="i-cek" viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></symbol>
+    <symbol id="i-piala" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4"/><path d="M12 13v4M8 20h8M10 17h4"/></symbol>
+  </svg>
+
+  <a class="lewati" href="#utama">Lewati ke isi utama</a>
+
+  <!-- ===================== MENU ATAS ===================== -->
+  <header class="header">
+    <nav class="container nav" aria-label="Menu utama">
+      <a href="#beranda" class="logo">
+        <span class="logo-huruf">K</span>
+        <span class="logo-nama">Khadafi</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#prestasi">Prestasi</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#tamsis">Tamsis</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <button type="button" class="btn btn-ungu btn-kecil" id="btn-bagikan">
+        <svg class="i i-sm" aria-hidden="true"><use href="#i-bagikan"></use></svg>
+        Bagikan
+      </button>
+    </nav>
+  </header>
+
+  <main id="utama">
+
+    <!-- ===================== SAPAAN + FOTO PROFIL ===================== -->
+    <section id="beranda" class="hero">
+      <div class="container hero-isi">
+        <div class="hero-teks">
+          <span class="label-pil"><span class="titik"></span>Portofolio pribadi · Sekolah Tamsis</span>
+          <h1>Halo, saya Khadafi.</h1>
+          <p>Selamat datang di halaman portofolio saya. Di sini kamu bisa mengenal saya lebih dekat, melihat prestasi yang pernah saya raih, foto-foto kegiatan, dan cerita tentang sekolah saya, Tamsis.</p>
+          <div class="hero-tombol">
+            <a href="#prestasi" class="btn btn-putih">
+              Lihat prestasi
+              <svg class="i" aria-hidden="true"><use href="#i-panah"></use></svg>
+            </a>
+            <a href="#galeri" class="btn btn-garis">Galeri kegiatan</a>
+            <a href="#kontak" class="btn btn-garis">Hubungi saya</a>
+          </div>
+        </div>
+
+        <div class="hero-foto">
+          <div class="foto-bingkai">
+            <div class="foto-profil">
+              <span class="placeholder" aria-hidden="true">
+                <svg class="i i-xl" aria-hidden="true"><use href="#i-kamera"></use></svg>
+                Foto profil Khadafi
+              </span>
+              <!-- FOTO PROFIL: simpan foto sebagai img/profil.jpg, atau ganti src di bawah -->
+              <img src="img/profil.jpg" alt="Foto Khadafi">
+            </div>
+            <div class="kartu-siswa">
+              <span class="ikon-kotak"><svg class="i" aria-hidden="true"><use href="#i-sekolah"></use></svg></span>
+              <span class="kartu-siswa-teks">
+                <strong>Siswa Tamsis</strong>
+                <small>[Kelas]</small>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROFIL SINGKAT ===================== -->
+    <section id="profil" class="section">
+      <div class="container profil-isi">
+        <div class="profil-teks">
+          <span class="eyebrow">01 · Profil singkat</span>
+          <h2>Kenalan dulu dengan Khadafi</h2>
+          <p class="bio">[Bio singkat: 2–3 kalimat tentang Khadafi — sifatnya, hal yang sedang ia pelajari, dan cita-citanya.]</p>
+          <div class="suka">
+            <h3>Hal yang saya sukai</h3>
+            <ul class="chip-list">
+              <li class="chip">[Hobi futsal]</li>
+              <li class="chip">[jurusan tbsm]</li>
+              <li class="chip">[Pelajaran b.indonesia]</li>
+              <li class="chip">[Olahraga main bola]</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="profil-kanan">
+          <!-- FOTO DI PROFIL: ganti src di bawah kalau mau pakai foto lain -->
+          <figure class="foto-kelas">
+            <img src="img/foto-kelas.jpg" alt="Suasana belajar di kelas: guru menjelaskan di depan papan tulis dan para siswa mengangkat tangan" width="647" height="473" loading="lazy">
+            <figcaption>Suasana belajar di kelas</figcaption>
+          </figure>
+
+          <dl class="biodata">
+            <div><dt>Nama lengkap</dt><dd>[Khadafi]</dd></div>
+            <div><dt>Nama panggilan</dt><dd>Khadafi</dd></div>
+            <div><dt>Sekolah</dt><dd>Tamsis</dd></div>
+            <div><dt>Kelas</dt><dd>[12 tbsm]</dd></div>
+            <div><dt>Cita-cita</dt><dd>[programer]</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DAFTAR PRESTASI ===================== -->
+    <section id="prestasi" class="section section-putih">
+      <div class="container">
+        <div class="prestasi-atas">
+          <div class="judul-bagian">
+            <span class="eyebrow">02 · Prestasi</span>
+            <h2>Prestasi yang sudah diraih</h2>
+            <p class="sub">Prestasi terbaru selalu tampil paling atas. Klik kartu untuk melihat tahun, tingkat, dan penyelenggaranya.</p>
+          </div>
+          <div class="filter" role="group" aria-label="Pilih kelompok prestasi">
+            <button type="button" class="filter-btn aktif" data-filter="semua" aria-pressed="true">
+              Semua <span class="jumlah" data-jumlah="semua"></span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="akademik" aria-pressed="false">
+              Akademik <span class="jumlah" data-jumlah="akademik"></span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="non-akademik" aria-pressed="false">
+              Non-akademik <span class="jumlah" data-jumlah="non-akademik"></span>
+            </button>
+          </div>
+        </div>
+        <!--
+          CARA MENGUBAH PRESTASI
+          - Foto piala/sertifikat: ganti src pada tag <img> (mis. img/prestasi-1.jpg).
+            Kalau file fotonya belum ada, otomatis tampil kotak contoh.
+          - data-kategori: "akademik" atau "non-akademik".
+          - Prestasi BARU: salin satu blok <button class="kartu-prestasi"> ... </button>
+            lalu taruh PALING ATAS supaya tampil duluan.
+          - Label "Terbaru": pindahkan <span class="lencana">Terbaru</span> ke kartu terbaru.
+          - Isi <span class="p-cerita"> muncul saat kartu diklik.
+        -->
+        <div class="prestasi-grid" id="prestasi-grid">
+
+          <!-- PRESTASI 1 -->
+          <button type="button" class="kartu-prestasi" data-kategori="akademik">
+            <span class="kartu-prestasi-gambar">
+              <span class="placeholder" aria-hidden="true"><svg class="i i-lg" aria-hidden="true"><use href="#i-piala"></use></svg>Foto piala / sertifikat</span>
+              <img src="img/prestasi-1.jpg" alt="" loading="lazy">
+              <span class="lencana">Terbaru</span>
+            </span>
+            <span class="kartu-prestasi-isi">
+              <span class="kategori">Akademik</span>
+              <span class="kartu-prestasi-judul">[Prestasi akademik tamsis]</span>
+              <span class="kartu-prestasi-meta">
+                <span class="p-tahun">[2021]</span>
+                <span class="p-tingkat">[kabupaten]</span>
+                <span class="p-penyelenggara">[bupati]</span>
+              </span>
+              <span class="p-cerita" hidden>[Cerita singkat: lomba apa, bagaimana persiapannya, dan apa yang Khadafi pelajari.]</span>
+              <span class="lihat-rincian">Lihat rincian <svg class="i i-sm" aria-hidden="true"><use href="#i-panah"></use></svg></span>
+            </span>
+          </button>
+
+          <!-- PRESTASI 2 -->
+          <button type="button" class="kartu-prestasi" data-kategori="non-akademik">
+            <span class="kartu-prestasi-gambar">
+              <span class="placeholder" aria-hidden="true"><svg class="i i-lg" aria-hidden="true"><use href="#i-piala"></use></svg>Foto piala / sertifikat</span>
+              <img src="img/prestasi-2.jpg" alt="" loading="lazy">
+            </span>
+            <span class="kartu-prestasi-isi">
+              <span class="kategori">Non-akademik</span>
+              <span class="kartu-prestasi-judul">[Prestasi non-akademik terbaru]</span>
+              <span class="kartu-prestasi-meta">
+                <span class="p-tahun">[2022]</span>
+                <span class="p-tingkat">[wali kota]</span>
+                <span class="p-penyelenggara">[kecamatan]</span>
+              </span>
+              <span class="p-cerita" hidden>[Cerita singkat tentang prestasi ini.]</span>
+              <span class="lihat-rincian">Lihat rincian <svg class="i i-sm" aria-hidden="true"><use href="#i-panah"></use></svg></span>
+            </span>
+          </button>
+
+          <!-- PRESTASI 3 -->
+          <button type="button" class="kartu-prestasi" data-kategori="akademik">
+            <span class="kartu-prestasi-gambar">
+              <span class="placeholder" aria-hidden="true"><svg class="i i-lg" aria-hidden="true"><use href="#i-piala"></use></svg>Foto piala / sertifikat</span>
+              <img src="img/prestasi-3.jpg" alt="" loading="lazy">
+            </span>
+            <span class="kartu-prestasi-isi">
+              <span class="kategori">Akademik</span>
+              <span class="kartu-prestasi-judul">[Prestasi akademik ke-2]</span>
+              <span class="kartu-prestasi-meta">
+                <span class="p-tahun">[Tahun]</span>
+                <span class="p-tingkat">[Tingkat]</span>
+                <span class="p-penyelenggara">[Penyelenggara]</span>
+              </span>
+              <span class="p-cerita" hidden>[Cerita singkat tentang prestasi ini.]</span>
+              <span class="lihat-rincian">Lihat rincian <svg class="i i-sm" aria-hidden="true"><use href="#i-panah"></use></svg></span>
+            </span>
+          </button>
+
+          <!-- PRESTASI 4 -->
+          <button type="button" class="kartu-prestasi" data-kategori="non-akademik">
+            <span class="kartu-prestasi-gambar">
+              <span class="placeholder" aria-hidden="true"><svg class="i i-lg" aria-hidden="true"><use href="#i-piala"></use></svg>Foto piala / sertifikat</span>
+              <img src="img/prestasi-4.jpg" alt="" loading="lazy">
+            </span>
+            <span class="kartu-prestasi-isi">
+              <span class="kategori">Non-akademik</span>
+              <span class="kartu-prestasi-judul">[Prestasi non-akademik ke-2]</span>
+              <span class="kartu-prestasi-meta">
+                <span class="p-tahun">[Tahun]</span>
+                <span class="p-tingkat">[Tingkat]</span>
+                <span class="p-penyelenggara">[Penyelenggara]</span>
+              </span>
+              <span class="p-cerita" hidden>[Cerita singkat tentang prestasi ini.]</span>
+              <span class="lihat-rincian">Lihat rincian <svg class="i i-sm" aria-hidden="true"><use href="#i-panah"></use></svg></span>
+            </span>
+          </button>
+
+          <!-- PRESTASI 5 -->
+          <button type="button" class="kartu-prestasi" data-kategori="akademik">
+            <span class="kartu-prestasi-gambar">
+              <span class="placeholder" aria-hidden="true"><svg class="i i-lg" aria-hidden="true"><use href="#i-piala"></use></svg>Foto piala / sertifikat</span>
+              <img src="img/prestasi-5.jpg" alt="" loading="lazy">
+            </span>
+            <span class="kartu-prestasi-isi">
+              <span class="kategori">Akademik</span>
+              <span class="kartu-prestasi-judul">[Prestasi akademik ke-3]</span>
+              <span class="kartu-prestasi-meta">
+                <span class="p-tahun">[Tahun]</span>
+                <span class="p-tingkat">[Tingkat]</span>
+                <span class="p-penyelenggara">[Penyelenggara]</span>
+              </span>
+              <span class="p-cerita" hidden>[Cerita singkat tentang prestasi ini.]</span>
+              <span class="lihat-rincian">Lihat rincian <svg class="i i-sm" aria-hidden="true"><use href="#i-panah"></use></svg></span>
+            </span>
+          </button>
+
+          <!-- PRESTASI 6 -->
+          <button type="button" class="kartu-prestasi" data-kategori="non-akademik">
+            <span class="kartu-prestasi-gambar">
+              <span class="placeholder" aria-hidden="true"><svg class="i i-lg" aria-hidden="true"><use href="#i-piala"></use></svg>Foto piala / sertifikat</span>
+              <img src="img/prestasi-6.jpg" alt="" loading="lazy">
+            </span>
+            <span class="kartu-prestasi-isi">
+              <span class="kategori">Non-akademik</span>
+              <span class="kartu-prestasi-judul">[Prestasi non-akademik ke-3]</span>
+              <span class="kartu-prestasi-meta">
+                <span class="p-tahun">[Tahun]</span>
+                <span class="p-tingkat">[Tingkat]</span>
+                <span class="p-penyelenggara">[Penyelenggara]</span>
+              </span>
+              <span class="p-cerita" hidden>[Cerita singkat tentang prestasi ini.]</span>
+              <span class="lihat-rincian">Lihat rincian <svg class="i i-sm" aria-hidden="true"><use href="#i-panah"></use></svg></span>
+            </span>
+          </button>
+
+          <p class="kosong" id="prestasi-kosong" hidden>Belum ada prestasi di kelompok ini.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALERI KEGIATAN ===================== -->
+    <section id="galeri" class="section">
+      <div class="container">
+        <div class="judul-bagian">
+          <span class="eyebrow">03 · Galeri kegiatan</span>
+          <h2>Momen belajar dan berkegiatan</h2>
+          <p class="sub">Ketuk sebuah foto untuk melihatnya lebih besar, lengkap dengan keterangan kapan dan di mana foto itu diambil.</p>
+        </div>
+        <!--
+          CARA MENGUBAH FOTO GALERI
+          - Ganti src pada tag <img>, mis. img/kegiatan-1.jpg.
+            Kalau file fotonya belum ada, otomatis tampil kotak contoh.
+          - Foto BARU: salin satu blok <button class="foto-item"> ... </button>.
+        -->
+        <div class="galeri-grid" id="galeri-grid">
+
+          <!-- FOTO 1 -->
+          <button type="button" class="foto-item">
+            <span class="foto-kotak">
+              <span class="placeholder" aria-hidden="true"><svg class="i i-lg" aria-hidden="true"><use href="#i-gambar"></use></svg>Foto kegiatan 1</span>
+              <img src="img/kegiatan-1.jpg" alt="" loading="lazy">
+            </span>
+            <span class="foto-info">
+              <span class="foto-judul">[Kegiatan belajar di kelas]</span>
+              <span class="foto-meta"><span class="f-tanggal">[Tanggal]</span><span class="f-lokasi">[Lokasi]</span></span>
+            </span>
+          </button>
+
+          <!-- FOTO 2 -->
+          <button type="button" class="foto-item">
+            <span class="foto-kotak">
+              <span class="placeholder" aria-hidden="true"><svg class="i i-lg" aria-hidden="true"><use href="#i-gambar"></use></svg>Foto kegiatan 2</span>
+              <img src="img/kegiatan-2.jpg" alt="" loading="lazy">
+            </span>
+            <span class="foto-info">
+              <span class="foto-judul">[Kegiatan ekstrakurikuler]</span>
+              <span class="foto-meta"><span class="f-tanggal">[Tanggal]</span><span class="f-lokasi">[Lokasi]</span></span>
+            </span>
+          </button>
+
+          <!-- FOTO 3 -->
+          <button type="button" class="foto-item">
+            <span class="foto-kotak">
+              <span class="placeholder" aria-hidden="true"><svg class="i i-lg" aria-hidden="true"><use href="#i-gambar"></use></svg>Foto kegiatan 3</span>
+              <img src="img/kegiatan-3.jpg" alt="" loading="lazy">
+            </span>
+            <span class="foto-info">
+              <span class="foto-judul">[Upacara atau acara sekolah]</span>
+              <span class="foto-meta"><span class="f-tanggal">[Tanggal]</span><span class="f-lokasi">[Lokasi]</span></span>
+            </span>
+          </button>
+
+          <!-- FOTO 4 -->
+          <button type="button" class="foto-item">
+            <span class="foto-kotak">
+              <span class="placeholder" aria-hidden="true"><svg class="i i-lg" aria-hidden="true"><use href="#i-gambar"></use></svg>Foto kegiatan 4</span>
+              <img src="img/kegiatan-4.jpg" alt="" loading="lazy">
+            </span>
+            <span class="foto-info">
+              <span class="foto-judul">[Lomba atau pertandingan]</span>
+              <span class="foto-meta"><span class="f-tanggal">[Tanggal]</span><span class="f-lokasi">[Lokasi]</span></span>
+            </span>
+          </button>
+
+          <!-- FOTO 5 -->
+          <button type="button" class="foto-item">
+            <span class="foto-kotak">
+              <span class="placeholder" aria-hidden="true"><svg class="i i-lg" aria-hidden="true"><use href="#i-gambar"></use></svg>Foto kegiatan 5</span>
+              <img src="img/kegiatan-5.jpg" alt="" loading="lazy">
+            </span>
+            <span class="foto-info">
+              <span class="foto-judul">[Kegiatan bersama teman]</span>
+              <span class="foto-meta"><span class="f-tanggal">[Tanggal]</span><span class="f-lokasi">[Lokasi]</span></span>
+            </span>
+          </button>
+
+          <!-- FOTO 6 -->
+          <button type="button" class="foto-item">
+            <span class="foto-kotak">
+              <span class="placeholder" aria-hidden="true"><svg class="i i-lg" aria-hidden="true"><use href="#i-gambar"></use></svg>Foto kegiatan 6</span>
+              <img src="img/kegiatan-6.jpg" alt="" loading="lazy">
+            </span>
+            <span class="foto-info">
+              <span class="foto-judul">[Kunjungan atau study tour]</span>
+              <span class="foto-meta"><span class="f-tanggal">[Tanggal]</span><span class="f-lokasi">[Lokasi]</span></span>
+            </span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEKOLAH TAMSIS ===================== -->
+    <section id="tamsis" class="section section-lembut">
+      <div class="container">
+        <div class="judul-bagian">
+          <span class="eyebrow">04 · Sekolah Tamsis</span>
+          <h2>Mengenal sekolah Tamsis</h2>
+          <p class="sub">Tempat Khadafi belajar, berteman, dan berkembang setiap hari.</p>
+        </div>
+
+        <div class="tamsis-isi">
+          <div class="tamsis-kiri">
+            <div class="kartu">
+              <h3 class="judul-kartu">Tentang Tamsis</h3>
+              <p class="teks-kartu">[Penjelasan singkat tentang Tamsis: sejarah singkat, visi sekolah, dan suasana belajarnya.]</p>
+            </div>
+
+            <div>
+              <h3 class="judul-kartu">Kegiatan &amp; program sekolah</h3>
+              <ul class="kegiatan-list">
+                <li>
+                  <span class="ikon-kotak"><svg class="i" aria-hidden="true"><use href="#i-bintang"></use></svg></span>
+                  <span><strong>[Program unggulan]</strong><small>[Deskripsi singkat program]</small></span>
+                </li>
+                <li>
+                  <span class="ikon-kotak"><svg class="i" aria-hidden="true"><use href="#i-orang"></use></svg></span>
+                  <span><strong>[Ekstrakurikuler]</strong><small>[Deskripsi singkat kegiatan]</small></span>
+                </li>
+                <li>
+                  <span class="ikon-kotak"><svg class="i" aria-hidden="true"><use href="#i-kalender"></use></svg></span>
+                  <span><strong>[Kegiatan tahunan]</strong><small>[Deskripsi singkat kegiatan]</small></span>
+                </li>
+                <li>
+                  <span class="ikon-kotak"><svg class="i" aria-hidden="true"><use href="#i-buku"></use></svg></span>
+                  <span><strong>[Kegiatan belajar]</strong><small>[Deskripsi singkat kegiatan]</small></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="identitas" aria-label="Identitas sekolah">
+            <div class="identitas-atas">
+              <div class="lambang">
+                <span class="placeholder" aria-hidden="true">Lambang</span>
+                <!-- LAMBANG SEKOLAH: simpan sebagai img/lambang.jpg, atau ganti src di bawah -->
+                <img src="img/lambang.jpg" alt="Lambang sekolah Tamsis">
+              </div>
+              <div>
+                <p class="nama-sekolah">Tamsis</p>
+                <p class="nama-resmi">[Nama resmi sekolah]</p>
+              </div>
+            </div>
+            <dl class="identitas-data">
+              <div>
+                <svg class="i" aria-hidden="true"><use href="#i-lokasi"></use></svg>
+                <span><dt>Alamat</dt><dd>[Alamat lengkap sekolah]</dd></span>
+              </div>
+              <div>
+                <svg class="i" aria-hidden="true"><use href="#i-sekolah"></use></svg>
+                <span><dt>Jenjang</dt><dd>[Jenjang pendidikan]</dd></span>
+              </div>
+              <div>
+                <svg class="i" aria-hidden="true"><use href="#i-chat"></use></svg>
+                <span><dt>Telepon sekolah</dt><dd>[Nomor telepon sekolah]</dd></span>
+              </div>
+            </dl>
+            <!-- GANTI: 62XXXXXXXXXX dengan nomor WhatsApp sekolah (awali 62, tanpa 0 / + / spasi) -->
+            <a href="https://wa.me/62XXXXXXXXXX" target="_blank" rel="noopener" class="btn btn-putih">
+              <svg class="i" aria-hidden="true"><use href="#i-chat"></use></svg>
+              WhatsApp sekolah
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== KONTAK ===================== -->
+    <section id="kontak" class="section">
+      <div class="container">
+        <div class="judul-bagian">
+          <span class="eyebrow">05 · Kontak</span>
+          <h2>Punya pesan untuk Khadafi?</h2>
+          <p class="sub">Hubungi lewat WhatsApp, lihat keseharian di Instagram, atau tinggalkan pesan singkat langsung dari halaman ini.</p>
+        </div>
+
+        <div class="kontak-isi">
+          <div class="kontak-link-list">
+            <!-- GANTI: 62XXXXXXXXXX dengan nomor WhatsApp Khadafi / orang tua -->
+            <a href="https://wa.me/62XXXXXXXXXX" target="_blank" rel="noopener" class="kontak-link">
+              <span class="ikon-besar ikon-besar-ungu"><svg class="i" aria-hidden="true"><use href="#i-chat"></use></svg></span>
+              <span class="kontak-teks"><strong>Chat lewat WhatsApp</strong><small>[Nomor WhatsApp]</small></span>
+              <svg class="i panah-kanan" aria-hidden="true"><use href="#i-panah"></use></svg>
+            </a>
+            <!-- GANTI: USERNAME dengan username Instagram -->
+            <a href="https://www.instagram.com/USERNAME" target="_blank" rel="noopener" class="kontak-link">
+              <span class="ikon-besar"><svg class="i" aria-hidden="true"><use href="#i-kamera"></use></svg></span>
+              <span class="kontak-teks"><strong>Lihat keseharian di Instagram</strong><small>@[username Instagram]</small></span>
+              <svg class="i panah-kanan" aria-hidden="true"><use href="#i-panah"></use></svg>
+            </a>
+          </div>
+
+          <div class="form-kartu">
+            <form class="form" id="form-pesan">
+              <h3 class="judul-kartu">Kirim pesan singkat</h3>
+              <div class="field">
+                <label for="pesan-nama">Nama kamu</label>
+                <input id="pesan-nama" name="nama" type="text" autocomplete="name" required placeholder="Contoh: Bu Rina, wali kelas">
+              </div>
+              <div class="field">
+                <label for="pesan-isi">Pesan</label>
+                <textarea id="pesan-isi" name="pesan" rows="5" required placeholder="Tulis ucapan, pertanyaan, atau ajakan lomba di sini"></textarea>
+              </div>
+              <button type="submit" class="btn btn-ungu tombol-kiri">
+                <svg class="i" aria-hidden="true"><use href="#i-kirim"></use></svg>
+                Kirim pesan
+              </button>
+            </form>
+
+            <div class="terkirim" id="pesan-terkirim" role="status" tabindex="-1" hidden>
+              <span class="ikon-cek"><svg class="i" aria-hidden="true"><use href="#i-cek"></use></svg></span>
+              <h3 class="judul-kartu">Terima kasih, pesanmu sudah terkirim!</h3>
+              <p class="sub">Khadafi akan membacanya secepatnya.</p>
+              <button type="button" class="btn btn-netral btn-kecil" id="btn-pesan-lain">Kirim pesan lain</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BAGIKAN ===================== -->
+    <section class="bagikan" aria-labelledby="judul-bagikan">
+      <div class="container bagikan-isi">
+        <div class="bagikan-teks">
+          <h2 id="judul-bagikan">Bagikan halaman ini</h2>
+          <p>Kirim ke teman, guru, atau keluarga supaya mereka ikut melihat perkembangan Khadafi.</p>
+        </div>
+        <div class="bagikan-tombol">
+          <button type="button" class="btn btn-putih" id="btn-salin">
+            <svg class="i" aria-hidden="true"><use href="#i-salin"></use></svg>
+            Salin tautan
+          </button>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-garis" id="link-wa-bagikan">
+            <svg class="i" aria-hidden="true"><use href="#i-chat"></use></svg>
+            WhatsApp
+          </a>
+          <button type="button" class="btn btn-garis" id="btn-instagram">
+            <svg class="i" aria-hidden="true"><use href="#i-kamera"></use></svg>
+            Instagram
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-isi">
+      <span>© <span id="tahun"></span> Khadafi · Sekolah Tamsis</span>
+      <a href="#beranda">
+        Kembali ke atas
+        <svg class="i i-sm" aria-hidden="true"><use href="#i-atas"></use></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ===================== RINCIAN PRESTASI ===================== -->
+  <dialog class="rincian" id="rincian" aria-labelledby="rincian-judul">
+    <div class="rincian-gambar" id="rincian-gambar"></div>
+    <div class="rincian-isi">
+      <span class="kategori" id="rincian-kategori"></span>
+      <h3 id="rincian-judul"></h3>
+      <dl class="rincian-data">
+        <div><dt>Tahun</dt><dd id="rincian-tahun"></dd></div>
+        <div><dt>Tingkat</dt><dd id="rincian-tingkat"></dd></div>
+        <div><dt>Penyelenggara</dt><dd id="rincian-penyelenggara"></dd></div>
+      </dl>
+      <p class="rincian-cerita" id="rincian-cerita"></p>
+      <button type="button" class="btn btn-ungu btn-kecil tombol-kanan" data-tutup-rincian>Tutup</button>
+    </div>
+    <button type="button" class="btn-x" data-tutup-rincian aria-label="Tutup rincian">
+      <svg class="i" aria-hidden="true"><use href="#i-tutup"></use></svg>
+    </button>
+  </dialog>
+
+  <!-- ===================== TAMPILAN BESAR FOTO ===================== -->
+  <dialog class="lightbox" id="lightbox" aria-label="Foto kegiatan diperbesar">
+    <div class="lightbox-foto" id="lb-foto"></div>
+    <div class="lightbox-bawah">
+      <div class="lightbox-info">
+        <p class="lightbox-judul" id="lb-judul"></p>
+        <p class="lightbox-meta">
+          <span><svg class="i i-sm" aria-hidden="true"><use href="#i-kalender"></use></svg><span id="lb-tanggal"></span></span>
+          <span><svg class="i i-sm" aria-hidden="true"><use href="#i-lokasi"></use></svg><span id="lb-lokasi"></span></span>
+        </p>
+      </div>
+      <div class="lightbox-kontrol">
+        <span class="lightbox-nomor" id="lb-nomor"></span>
+        <button type="button" class="btn-bulat" id="lb-sebelum" aria-label="Foto sebelumnya">
+          <svg class="i" aria-hidden="true"><use href="#i-kiri"></use></svg>
+        </button>
+        <button type="button" class="btn-bulat" id="lb-berikut" aria-label="Foto berikutnya">
+          <svg class="i" aria-hidden="true"><use href="#i-kanan"></use></svg>
+        </button>
+        <button type="button" class="btn-bulat btn-bulat-putih" id="lb-tutup" aria-label="Tutup foto">
+          <svg class="i" aria-hidden="true"><use href="#i-tutup"></use></svg>
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Notifikasi kecil (muncul sebentar di bawah layar) -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
